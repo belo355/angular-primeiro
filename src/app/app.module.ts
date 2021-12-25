@@ -1,14 +1,20 @@
+import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
+import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-
+import { CursosModule } from './cursos/cursos.module';
+import { CursosDetalheComponent } from './cursos/cursos-detalhe/cursos-detalhe.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MeuPrimeiroComponent,
+    MeuPrimeiro2Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CursosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
